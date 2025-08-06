@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --preto: rgb(41, 41, 41);
+    --sombra: 0px 5px 50px -12px #1e1e1e;
+    --verde: #3d774e;
+}
+
+body{
+    font-family: var(--inter);
+    color: var(--preto);
+    background-color: #FFFDF8;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    box-shadow: var(--sombra);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 18%;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--preto);
+    font-weight: 520;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    transform: scale(1.08);
+    text-decoration: overline 1.5px;
+    color: var(--verde);
+}
+
+main{
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.inicio {
+    width: 52%;
+    font-size: 30px;
+    margin-top: 2%;
+}
+
+.subtitulo h3{
+    margin-top: 1%;
+    font-size: 21px;
+    font-weight: 450;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    margin-top: 3%;
+    border-radius: 6px;
+    background: none;
+    border: solid;
+    border-width: 3px;
+    border-color: var(--verde);
+    transition: 0.2s;
+}
+
+button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-family: var(--poppins);text-decoration: none;
+    font-size: 18px;
+    font-weight: 420;
+    color: var(--verde);
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.imagem{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 10%;
+}
+
+.imagem img{
+    width: 60%;
+}
