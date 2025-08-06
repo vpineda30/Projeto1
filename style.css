@@ -9,7 +9,7 @@
     --poppins: 'Poppins', sans-serif;
     --inter: 'Inter', sans-serif;
     --preto: rgb(41, 41, 41);
-    --sombra: 0px 5px 50px -12px #1e1e1e;
+    --sombra: 0px 5px 30px -12px #00000066;
     --verde: #3d774e;
 }
 
@@ -19,9 +19,14 @@ body{
     background-color: #FFFDF8;
 }
 
+main{
+    margin-top: 20%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
 header{
     display: flex;
-    width: 100%;
 }
 
 nav{
@@ -31,6 +36,8 @@ nav{
     width: 100%;
     height: 120px;
     box-shadow: var(--sombra);
+    background-color: #FFFDF8;
+    z-index: 1000;
 }
 
 nav ul{
@@ -58,20 +65,13 @@ nav ul li a:hover{
     color: var(--verde);
 }
 
-main{
-    margin-top: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 .inicio {
-    width: 52%;
+    width: 53%;
     font-size: 30px;
-    margin-top: 2%;
 }
 
 .subtitulo h3{
-    margin-top: 1%;
+    margin-top: 0.5%;
     font-size: 21px;
     font-weight: 450;
 }
@@ -109,10 +109,118 @@ button:hover{
     display: flex;
     justify-content: end;
     position: absolute;
-    margin-left: 34%;
-    margin-top: 10%;
+    margin-left: 32%;
+    margin-top: 11%;
 }
 
 .imagem img{
-    width: 60%;
+    width: 58%;
 }
+
+#cursos{
+    margin-top: 22%;
+}
+
+#cursos h1{
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins);
+    font-size: 40px;
+    color: var(--verde);
+}
+
+.cursos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-top: 5%;
+}
+
+.cursos .curso{
+    width: 32%;
+    height: 500px;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#beneficios{
+    margin-top: 20%;
+}
+
+.container{
+    display: flex;
+    gap: 2%;
+}
+
+#beneficios h1{
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins);
+    font-size: 40px;
+    color: var(--verde);
+}
+
+.beneficio{
+    display: flex;
+    justify-content: start;
+    width: 50%;
+    height: 500px;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.beneficio ul{
+    position: absolute;
+    list-style: none;
+    padding-left: 4%;
+    padding-top: 8%;
+    width: 18%;
+}
+
+.beneficio ul li{
+    display: flex;
+    font-size: 22px;
+}
+
+.beneficio ul li span{
+    color: var(--verde);
+}
+
+#beneficios img{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: 18%;
+    margin-left: 18%;
+    margin-top: 8%;
+}
+
+.beneficio .texto{
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins);
+    font-size: 40px;
+    padding: 8%;
+    color: var(--verde);
+}
+
+.beneficio .texto h2{
+    padding-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+#equipe{
+    margin-top: 20%;
+}
+
+#equipe h1{
+    display: flex;
+    justify-content: center;
+    font-family: var(--poppins);
+    font-size: 40px;
+    color: var(--verde);
+}
+
