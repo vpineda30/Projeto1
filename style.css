@@ -224,3 +224,37 @@ button:hover{
     color: var(--verde);
 }
 
+.equipe{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 18%;
+}
+
+.equipe .imagens{
+    width: 50px;
+}
+
+.equipe .imagens img{
+    width: 250px;
+    border: solid;
+    border-width: 5px;
+    border-color: var(--verde);
+    border-radius: 500px;
+}
+
+.equipe .imagens img h3{
+    display: flex;
+    justify-content: center;
+}
+
+.professores{
+    padding-left: 200%;
+    margin-top: 15%;
+}
+
+.professores .titulo p{
+    margin-top: 10%;
+    width: 200px;
+    text-align: center;
+}
