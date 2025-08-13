@@ -253,8 +253,15 @@ button:hover{
     margin-top: 15%;
 }
 
-.professores .titulo p{
+.professores .titulo{
+    display: flex;
     margin-top: 10%;
     width: 200px;
+    text-align: center;
+}
+
+.professores .diciplinas{
+    display: flex;
+    width: 100px;
     text-align: center;
 }
