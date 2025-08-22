@@ -103,13 +103,13 @@
             <div class="formulario">
                 <form id="form">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" placeholder="Digite seu nome" required>
+                    <input type="text" name="nome" id="input" placeholder="Digite seu nome" required>
     
                     <label for="email">E-mail:</label>
-                    <input type="text" name="email" placeholder="Digite seu e-mail" required>
+                    <input type="text" name="email" id="input" placeholder="Digite seu e-mail" required>
     
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" name="tel" placeholder="Digite seu telefone" required>
+                    <input type="tel" name="tel" id="input" placeholder="Digite seu telefone" required>
 
                     <label for="cursos">Cursos</label>
                     <select name="curso">
@@ -121,26 +121,13 @@
                     </select>
                     
                     <div class="botao">
-                        <button type="submit" class="enviar">Enviar</button>
+                        <button type="submit" onclick="enviar()" class="enviar">Enviar</button>
                     </div>
                 </form>
             </div>
 
-            <script>
-                document.getElementById("form").addEventListener("submit", async (e) => {
-                e.preventDefault();
-
-                    const formData = new FormData(e.target);
-                    const data = Object.fromEntries(formData.entries());
-
-                    await fetch("https://vpineda.app.n8n.cloud/webhook-test/8584e79f-ab46-4e56-9912-1df590038d82", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(data)
-                    });
-                    alert("Formulário enviado com sucesso!");
-                });
-            </script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js"></script>
+            <script src="index.js"></script>
             
         </section>
     </main>
