@@ -73,7 +73,7 @@ nav .logo {
 }
 
 nav .logo img{
-    width: 90px;
+    width: 80px;
     height: 100px;
     cursor: pointer;
 }
@@ -135,7 +135,7 @@ button:hover{
 }
 
 #cursos{
-    margin-top: 22%;
+    margin-top: 25%;
 }
 
 #cursos h1{
