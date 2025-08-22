@@ -229,7 +229,7 @@ button:hover{
     justify-content: center;
     box-sizing: var(--sombra);
     width: 100%;
-    height: 380px;
+    height: 400px;
     margin-top: 6%;
 }
 
@@ -240,7 +240,8 @@ button:hover{
     box-shadow: var(--sombra);
     padding: 35px;
     width: 500px;
-    height: 500px;
+    height: 620px;
+    border-radius: 10px;
 }
 
 form label{
@@ -265,6 +266,33 @@ form input::placeholder{
     color: var(--verde);
     font-family: var(--poppins);
     font-weight: 400;
+}
+
+form input:focus{
+    border-color: var(--verde);
+}
+
+form select{
+    margin-top: 3%;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--verde);
+    font-family: var(--poppins);
+}
+
+form select:focus{
+    border-color: var(--verde);
+}
+
+form select option{
+    color: var(--verde);
+    font-family: var(--poppins);
+    font-weight: 400;
+    padding: 3%;
 }
 
 form button{
@@ -292,5 +320,48 @@ form .botao{
     display: flex;
     justify-content: center;
     margin-top: 8%;
+}
+
+footer{
+    margin-top: 20%;
+    padding: 3%;
+    box-shadow: var(--sombra);
+    height: 250px;
+}
+
+
+footer .contatos h3{
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    color: var(--verde);
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    list-style: none;
+    gap: 1.5%;
+}
+
+footer ul li i{
+    font-size: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--verde);
+}
+
+footer ul li i:hover{
+    transform:scale(1.2);
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-weight: 450;
+    font-size: 17px;
+    color: var(--verde);
 }
 
