@@ -65,6 +65,23 @@ nav ul li a:hover{
     color: var(--verde);
 }
 
+nav .logo {
+    position: absolute;
+    display: flex;
+    margin-right: 85%;
+    margin-top: 0.5%;
+}
+
+nav .logo img{
+    width: 90px;
+    height: 100px;
+    cursor: pointer;
+}
+
+nav .logo img:hover{
+    transform: scale(1.02);
+}
+
 .inicio {
     width: 53%;
     font-size: 30px;
