@@ -42,5 +42,3 @@ function enviar(){
         apiconnect()
     }
 }
-
-enviar();
