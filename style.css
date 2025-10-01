@@ -43,7 +43,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: center;
-    gap: 20%;
+    gap: 22%;
 }
 
 nav ul li{
@@ -53,14 +53,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 19px;
+    font-size: 18px;
     color: var(--preto);
     font-weight: 520;
     transition: 0.2s;
 }
 
 nav ul li a:hover{
-    transform: scale(1.06);
+    transform: scale(1.05);
     text-decoration: overline 1.5px;
     color: var(--verde);
 }
@@ -76,10 +76,11 @@ nav .logo img{
     width: 80px;
     height: 100px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 nav .logo img:hover{
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .inicio {
