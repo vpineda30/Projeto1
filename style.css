@@ -363,14 +363,14 @@ footer ul{
 }
 
 footer ul li i{
-    font-size: 30px;
+    font-size: 32px;
     transition: 0.2s;
     cursor: pointer;
     color: var(--verde);
 }
 
 footer ul li i:hover{
-    transform:scale(1.2);
+    transform: translateY(-8px);
 }
 
 h4{
